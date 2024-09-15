@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Pagination from "./components/pagination";
+import Search from "./components/search";
+import Stories from "./components/stories";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(){
+  return(
+    <>
+      <div style={{textAlign:"center", fontSize:"3rem", paddingTop:"4%", paddingBottom:"2%",}}>
+        SEARCH HERE
+      </div>
+      <Search/>
+      <Pagination/>
+      <Stories/>
+    </>
+  )
 }
 
 export default App;
