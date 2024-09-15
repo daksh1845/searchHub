@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/searchHub/static/css/main.2fdf0894.css",
+    "main.js": "/searchHub/static/js/main.d923f650.js",
+    "index.html": "/searchHub/index.html",
+    "main.2fdf0894.css.map": "/searchHub/static/css/main.2fdf0894.css.map",
+    "main.d923f650.js.map": "/searchHub/static/js/main.d923f650.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fdf0894.css",
+    "static/js/main.d923f650.js"
+  ]
+}
