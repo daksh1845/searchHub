@@ -23,27 +23,29 @@ function Reducer(state, action){
             ...state,
             query : action.payload
         }
-        case 'PREV_VALUE' : 
-        
-        const val_1 = state.page
-        if(val_1 <= 1){
-            state.page = 1
+
+        case "NEXT_VALUE":
+        let pageNumInc = state.page + 1;
+
+        if (pageNumInc >= state.nbPages) {
+          pageNumInc = 0;
         }
-        return{
-            ...state,
-            page : val_1 - 1
+        return {
+          ...state,
+          page: pageNumInc,
+        };
+
+        case "PREV_VALUE":
+        let pageNum = state.page - 1;
+
+        if (pageNum <= 0) {
+          pageNum = 0;
         }
 
-        case 'NEXT_VALUE' : 
-        
-        const val_2 = state.page
-        if(val_2 >= state.nbPages-1){
-            state.page = -1
-        }
-        return{
-            ...state,
-            page : val_2 + 1
-        }
+        return {
+          ...state,
+          page: pageNum,
+        };
     }
 }
 
